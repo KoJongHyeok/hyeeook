@@ -33,5 +33,5 @@ public class YoilTeller {
 //	>> java com.fastcampus.ch2.YoilTeller args[0] args[1] args[2]
 
 //	브라우저로 URL을 입력해서 원격 프로그램을 호출하는 과정도 이와 같음.
-//	자바 인터프리터가 매개변수로 받은 값을 문자열 배열로 만들어서 해당 메서드에게 넘겨주는 것처럼,
-//	톰캣이 URL로 요청받은 정보를 HttpServletRequest 객체를 만들어서 담고 해당 메서드에 넘겨줌.
+//	자바 인터프리터가 받은 값을 문자열 배열로 만들어서 해당 메서드에게 매개변수로 넘겨주는 것처럼,
+//	톰캣이 URL로 요청받은 정보를 HttpServletRequest 객체를 만들어서 담고 해당 메서드에 매개변수로 넘겨줌.
