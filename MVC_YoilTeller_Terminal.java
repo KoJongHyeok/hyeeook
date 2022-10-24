@@ -25,7 +25,6 @@ public class YoilTeller {
 		System.out.print(year + "년 " + month + "월 " + day + "일은 ");
 		System.out.println(yoil + "요일입니다.");
 		
-		
 	}
 
 }
