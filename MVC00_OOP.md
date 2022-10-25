@@ -19,11 +19,12 @@ ___
 ___
 
 #### Tomcat 내부 구성 및 처리 과정
-> 0. 브라우저에서 'http://www.fastcampus.com/ch2/getYoil'를 요청
+> 0. 브라우저에서 'http://www.fastcampus.com/ch2/TwoDice'를 요청
 > 1. Server(Tomcat)
-> 2. Service, Thread pool
-> 3. Engine(Catalina), Connector(Protocol)
+> 2. Thread Pool, Service
+> 3. Connector(Protocol), Engine(Catalina)
 > 4. Host(www.fastcampus.com)/ n개 가능
 > 5. Context(Web App, 각각의 스프링 프로젝트, /ch2)/ n개 가능
-> 6. Servlet(작은 서버 프로그램, /getYoil)/ n개 가능
-> 7. 
+> 6. Servlet(Dispatcher-Servlet, 작은 서버 프로그램)/ n개 가능
+> 7. @Controller
+> 8. @RequestMapping("/rollDice")
