@@ -15,3 +15,14 @@ ___
 > 1. DispatcherServlet이 입력 처리, Model 객체를 만들어서 Controller에게 전달
 > 2. Controller가 처리 후 결과를 Model 객체에 저장해서 DispatcherServlet에게 전달
 > 3. DispatcherServlet이 View로 전달하면 View가 응답을 만들어내서 클라이언트에게 전송
+
+___
+
+#### 톰캣 내부 구성 및 처리 과정
+> 1. Server
+> 2. Service
+> 3. Engine
+> 4. Host
+> 5. Context
+> 6. Servlet
+> 7. 
