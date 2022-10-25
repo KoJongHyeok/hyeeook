@@ -20,7 +20,7 @@ public class YoilTellerMVC {
 //		2. 요일 계산
 		char yoil = getYoil(year, month, day);
 		
-//		3. 계산 결과를 model에 저장
+//		3. 계산 결과를 Model에 저장
 		model.addAttribute("year", year);
 		model.addAttribute("month", month);
 		model.addAttribute("day", day);
