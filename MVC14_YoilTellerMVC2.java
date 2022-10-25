@@ -9,9 +9,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class YoilTellerMVC2 {
+public class YoilTellerMVC {
 	
-	@RequestMapping("/getYoilMVC2")
+	@RequestMapping("/getYoilMVC")
 	public void main(int year, int month, int day, Model model) throws IOException {
 		
 //		1. 유효성 검사
