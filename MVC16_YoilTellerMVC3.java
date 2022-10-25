@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class YoilTellerMVC {
+public class YoilTellerMVC3 {
 	
-	@RequestMapping("/getYoilMVC2")
+	@RequestMapping("/getYoilMVC3")
 	public ModelAndView main(int year, int month, int day) throws IOException {
 		
 		ModelAndView mv = new ModelAndView();
