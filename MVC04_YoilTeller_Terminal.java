@@ -4,7 +4,7 @@ import java.util.Calendar;
 
 public class YoilTeller {
 
-	public static void main(String[] args) {
+	public void main(String[] args) {
 //		1. 입력
 		String year = args[0];
 		String month = args[1];
