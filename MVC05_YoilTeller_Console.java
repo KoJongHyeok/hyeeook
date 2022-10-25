@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class YoilTeller {
 	
 	@RequestMapping("/getYoil")
-	public static void main(HttpServletRequest request) {
+	public void main(HttpServletRequest request) {
 //		1. 입력
 		String year = request.getParameter("year");
 		String month = request.getParameter("month");
