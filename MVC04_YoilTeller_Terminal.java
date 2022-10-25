@@ -10,11 +10,11 @@ public class YoilTeller {
 		String month = args[1];
 		String day = args[2];
 		
+//		2. 작업
 		int yyyy = Integer.valueOf(year);
 		int mm = Integer.valueOf(month);
 		int dd = Integer.valueOf(day);
 		
-//		2. 작업
 		Calendar cal = Calendar.getInstance();
 		cal.set(yyyy, mm-1, dd);
 		
