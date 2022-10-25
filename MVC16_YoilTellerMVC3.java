@@ -16,7 +16,10 @@ public class YoilTellerMVC3 {
 		
 		ModelAndView mv = new ModelAndView();
 //		1. 유효성 검사
-//		if (!isValid(year, month, day)) { return "yoilError"; }
+		if (!isValid(year, month, day)) {
+			mv.setViewName("yoilError");
+			return mv;
+		}
 		
 //		2. 요일 계산
 		char yoil = getYoil(year, month, day);
