@@ -18,11 +18,12 @@ ___
 
 ___
 
-#### 톰캣 내부 구성 및 처리 과정
-> 1. Server
-> 2. Service
-> 3. Engine
-> 4. Host
-> 5. Context
-> 6. Servlet
+#### Tomcat 내부 구성 및 처리 과정
+> 0. 브라우저에서 'http://www.fastcampus.com/ch2/getYoil'를 요청
+> 1. Server(Tomcat)
+> 2. Service, Thread pool
+> 3. Engine(Catalina), Connector(Protocol)
+> 4. Host(www.fastcampus.com)/ n개 가능
+> 5. Context(Web App, 각각의 스프링 프로젝트, /ch2)/ n개 가능
+> 6. Servlet(작은 서버 프로그램, /getYoil)/ n개 가능
 > 7. 
