@@ -9,7 +9,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class YoilTellerMVC1 {
+public class YoilTellerMVC {
 	
 	@RequestMapping("/getYoilMVC")
 	public String main(int year, int month, int day, Model model) throws IOException {
