@@ -4,7 +4,7 @@
 <%@ page import="com.fastcampus.ch2.*" %>
 <%
 	Person person = new Person();
-	request.setAttribute("person", person);		<%-- lv를 저장소에 저장하지 않으면 EL에 사용할 수 없음 --%>
+	request.setAttribute("person", person);		<%-- lv를 저장소에 저장하지 않으면 EL에서 사용할 수 없음 --%>
 	request.setAttribute("name", "남궁성");
 	request.setAttribute("list", new java.util.ArrayList());	
 %>
