@@ -21,4 +21,4 @@
 		<filter-name>encodingFilter</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
-	<!-- 한글 변환 필터 끝 -->
+<!-- 한글 변환 필터 끝 -->
