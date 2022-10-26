@@ -37,4 +37,4 @@ ___
 > 3. -Dwtp.deploy="..."에 ...경로 복사 및 이동
 > 4. 상위 폴더(tmp0)로 이동
 > 5. work -> Catalina -> localhost -> 해당 프로젝트 이름의 폴더
-> *** WEB_002dINF : 스프링에서 사용하는 views(.jsp) 폴더가 변환되는 저장소
+> - WEB_002dINF : 스프링에서 사용하는 views(.jsp) 폴더가 변환되는 저장소
