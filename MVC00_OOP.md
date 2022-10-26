@@ -39,7 +39,7 @@ ___
 > 5. work -> Catalina -> localhost -> 해당 프로젝트 이름의 폴더
 > - WEB_002dINF : 스프링에서 사용하는 views(.jsp) 폴더가 변환되는 저장소
 > 
-> ###### jsp의 내용을 수정했지만 적용이 안되는 경우 해결법
+###### jsp의 내용을 수정했지만 적용이 안되는 경우 해결법
 > - 방법(1). 해당 프로젝트 이름의 폴더 내의 모든 파일과 폴더를 삭제
 > - 방법(2). STS -> Servers -> Tomcat 우클릭 -> Clean Tomcat Work Directory...
 > - 브라우저 새로고침 및 URL 재호출시 자동 재생성
