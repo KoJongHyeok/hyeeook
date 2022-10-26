@@ -22,3 +22,5 @@
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
 <!-- 한글 변환 필터 끝 -->
+
+<!-- Preferences -> HTML Files -> Encoding : UTF-8 -->
