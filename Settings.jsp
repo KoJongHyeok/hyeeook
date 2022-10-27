@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
+<!-- ---------------------------------------------------------------------------------------------- -->
 
 <!-- 한글 변환 필터 시작 -->
 <!-- 경로 : src -> main -> webapp -> WEB-INF -> web.xml -> 맨아래에 붙여넣기 -->
@@ -22,5 +23,7 @@
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
 <!-- 한글 변환 필터 끝 -->
+
+<!-- ---------------------------------------------------------------------------------------------- -->
 
 <!-- Preferences -> HTML Files -> Encoding : UTF-8 -->
