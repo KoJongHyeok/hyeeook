@@ -47,9 +47,9 @@ ___
 ___
 
 #### .m2(Maven 저장소)
-- 'pom.xml(Maven의 의존성 관리 파일)'의 'dependency'로 등록된 모듈들이 다운받아지는 경로 >> 'C:/User/insb1/.m2/repository'
-- 알 수 없는 문제가 발생하면 대부분 프로젝트에서 의존(사용)하고 있는 모듈 간에 충돌이 때문에 발생. 'repository'를 삭제하고 'STS'에서 'Maven Update'를 수행하면 됨. 그러면 자동으로 'repository'가 재생성되면서 해결됨. '.m2'는 절대 삭제하면 안 됨.
-- '/C:\Users\insb1\.m2\repository\org\springframework\spring-web\5.0.7.RELEASE' 폴더에서 'spring-web-5.0.7.RELEASE.jar' : 실제 모듈, 'spring-web-5.0.7.RELEASE-sources.jar' : 소스 파일
+> - 'pom.xml(Maven의 의존성 관리 파일)'의 'dependency'로 등록된 모듈들이 다운받아지는 경로 >> 'C:/User/insb1/.m2/repository'
+> - 알 수 없는 문제가 발생하면 대부분 프로젝트에서 의존(사용)하고 있는 모듈 간에 충돌이 때문에 발생. 'repository'를 삭제하고 'STS'에서 'Maven Update'를 수행하면 됨. 그러면 자동으로 'repository'가 재생성되면서 해결됨. '.m2'는 절대 삭제하면 안 됨.
+> - '/C:\Users\insb1\.m2\repository\org\springframework\spring-web\5.0.7.RELEASE' 폴더에서 'spring-web-5.0.7.RELEASE.jar' : 실제 모듈, 'spring-web-5.0.7.RELEASE-sources.jar' : 소스 파일
 
 ___
 ### @RequestMapping의 URL패턴
@@ -65,3 +65,7 @@ ___
 - 위 경로 중에 없으면 404 Not Found 발생
 
 ___
+
+|      |redirect|forward|
+|------|--------|-------|
+|Method|GET||
