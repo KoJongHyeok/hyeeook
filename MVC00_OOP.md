@@ -45,3 +45,11 @@ ___
 > - 브라우저 새로고침 및 URL 재호출 -> 수정된 파일로 자동 생성 및 컴파일
 
 ___
+
+### @RequestMapping의 URL패턴
+
+|     |종류|URL패턴|매칭URL|
+|-----|----|-------|-------|
+|1순위|exact mapping|/login/hello.do|http://localhost/ch2<span style="color:red">/login/hello.do</span>|
+|2순위|path mapping|/login/*|http://localhost/ch2<span style="color:red">/login/</span><br>http://localhost/ch2<span style="color:red">/login/</span>hello<br>http://localhost/ch2<span style="color:red">/login/</span>hello.do<br>http://localhost/ch2<span style="color:red">/login/</span>test/|
+|3순위|extension mapping|*.do|http://localhost/ch2/hi<span style="color:red">.do</span><br>http://localhost/ch2/login/hello<span style="color:red">.do</span>|
