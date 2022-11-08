@@ -46,6 +46,69 @@ public class Date_Calendar {
 		System.out.println("thisZoneOffset(GMT 기준 시차(1/1000초 단위)) = " + thisZoneOffset);
 		System.out.println("thisAmPm(0:오전, 1:오후) = " + thisAmPm);
 		
+//-----------------------------------------------------------------------------------------------------------------
+		
+		Calendar date1 = Calendar.getInstance();
+		Calendar date2 = Calendar.getInstance();
+		final String[] DAY_OF_WEEK = {"", "일", "월", "화", "수", "목", "금", "토"};
+		
+		
+		date1.set(1993, 6, 14);	// 1993년 7월 14일
+		System.out.println(toString(date1) + " " + DAY_OF_WEEK[date1.get(Calendar.DAY_OF_WEEK)] + "요일");
+		System.out.println(toString(date2) + " " + DAY_OF_WEEK[date2.get(Calendar.DAY_OF_WEEK)] + "요일");
+		System.out.println();
+		
+		// 날짜 계산 방법
+		long difference = (date2.getTimeInMillis() - date1.getTimeInMillis())/1000;
+		System.out.println("생후 " + difference + "초!");
+		System.out.println("생후 " + difference/(60*60*24) + "일!");
+		System.out.println();
+		
+		Calendar time1 = Calendar.getInstance();
+		Calendar time2 = Calendar.getInstance();
+		final int[] TIME_UNIT = {3600, 60, 1};
+		final String[] TIME_UNIT_NAME = {"시간 ", "분 ", "초 "};
+		
+		time1.set(Calendar.HOUR_OF_DAY, 10);	// 10시 20분 30초
+		time1.set(Calendar.MINUTE, 20);
+		time1.set(Calendar.SECOND, 30);
+		
+		time2.set(Calendar.HOUR_OF_DAY, 20);	// 20시 30분 10초
+		time2.set(Calendar.MINUTE, 30);
+		time2.set(Calendar.SECOND, 10);
+		
+		System.out.println("time1 : " + time1.get(Calendar.HOUR_OF_DAY) + "시 " + time1.get(Calendar.MINUTE) + "분 " + time1.get(Calendar.SECOND) + "초");
+		System.out.println("time2 : " + time2.get(Calendar.HOUR_OF_DAY) + "시 " + time2.get(Calendar.MINUTE) + "분 " + time2.get(Calendar.SECOND) + "초");
+		System.out.println();
+		
+		difference = Math.abs(time1.getTimeInMillis() - time2.getTimeInMillis())/1000;
+		System.out.println("차이는 " + difference + "초!");
+		
+		String tmp = "";
+		for (int i=0; i<TIME_UNIT.length; i++) {
+			tmp += difference/TIME_UNIT[i] + TIME_UNIT_NAME[i];
+			difference %= TIME_UNIT[i];
+		}
+		System.out.println("차이는 " + tmp);
+
+		/* 결과
+		1993년 7월 14일 수요일
+		2022년 11월 9일 수요일
+
+		생후 925344000초!
+		생후 10710일!
+
+		time1 : 10시 20분 30초
+		time2 : 20시 30분 10초
+
+		차이는 36580초!
+		차이는 10시간 9분 40초 
+		*/
+		
+	}
+	
+	public static String toString(Calendar cal) {
+		return cal.get(Calendar.YEAR) + "년 " + (cal.get(Calendar.MONTH)+1) + "월 " + 	cal.get(Calendar.DATE) + "일";
 	}
 
 }
