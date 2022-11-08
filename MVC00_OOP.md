@@ -55,4 +55,5 @@ ___
 |3순위|extension mapping<br>(확장자 맵핑)|*.do|http://localhost/ch2/hi.do<br>http://localhost/ch2/login/hello.do|
 
 - ? : 한 글자 / * : 여러 글자 / ** : 하위 경로 포함
+- ** : 여기에 아무 경로가 안들어가도, 여러 경로가 들어가도 해당됨
 - 위 경로 중에 없으면 404 Not Found 발생
