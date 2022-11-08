@@ -48,6 +48,7 @@ ___
 
 ### @RequestMapping의 URL패턴
 
+- ? : 한 글자 / * : 여러 글자 / ** : 하위 결로 포함
 |     |종류|URL패턴|매칭URL|
 |-----|----|-------|-------|
 |1순위|exact mapping|/login/hello.do|http://localhost/ch2/login/hello.do|
