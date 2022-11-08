@@ -50,8 +50,8 @@ ___
 
 |     |종류|URL패턴|매칭URL|
 |-----|----|-------|-------|
-|1순위|exact mapping|/login/hello.do|http://localhost/ch2/login/hello.do|
-|2순위|path mapping|/login/*|http://localhost/ch2/login/<br>http://localhost/ch2/login/hello<br>http://localhost/ch2/login/hello.do<br>http://localhost/ch2/login/test/|
-|3순위|extension mapping|*.do|http://localhost/ch2/hi.do<br>http://localhost/ch2/login/hello.do|
+|1순위|exact mapping<br>(정확히 일치)|/login/hello.do|http://localhost/ch2/login/hello.do|
+|2순위|path mapping<br>(경로 맵핑)|/login/*|http://localhost/ch2/login/<br>http://localhost/ch2/login/hello<br>http://localhost/ch2/login/hello.do<br>http://localhost/ch2/login/test/|
+|3순위|extension mapping<br>(확장자 맵핑)|*.do|http://localhost/ch2/hi.do<br>http://localhost/ch2/login/hello.do|
 
 - ? : 한 글자 / * : 여러 글자 / ** : 하위 경로 포함
