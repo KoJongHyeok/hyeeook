@@ -43,6 +43,9 @@ ___
 > - 방법(1). 해당 프로젝트 이름의 폴더 내의 모든 파일과 폴더를 삭제
 > - 방법(2). STS -> Servers -> Tomcat 우클릭 -> Clean Tomcat Work Directory...
 > - 브라우저 새로고침 및 URL 재호출 -> 수정된 파일로 자동 생성 및 컴파일
+>
+#### encoding 설정
+> - Preferences -> HTML Files -> Encoding : UTF-8
 
 ___
 
