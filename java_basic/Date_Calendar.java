@@ -46,7 +46,7 @@ public class Date_Calendar {
 		System.out.println("thisZoneOffset(GMT 기준 시차(1/1000초 단위)) = " + thisZoneOffset);
 		System.out.println("thisAmPm(0:오전, 1:오후) = " + thisAmPm);
 
-//-----------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------------밑에 toString(Calendar cal)
 
 		Calendar date1 = Calendar.getInstance();
 		Calendar date2 = Calendar.getInstance();
@@ -91,6 +91,32 @@ public class Date_Calendar {
 			difference %= TIME_UNIT[i];
 		}
 		System.out.println("차이는 " + tmp);
+		
+//----------------------------------------------------------------------------------------------------------------------------
+		
+		Calendar dt1 = Calendar.getInstance();
+		System.out.println(new Date(dt1.getTimeInMillis()));
+		System.out.println(dt1.getTime());
+		
+		dt1.clear();		// Calendar 객체의 모든 필드를 초기화, Thu Jan 01 00:00:00 KST 1970
+		System.out.println(new Date(dt1.getTimeInMillis()));
+		System.out.println(dt1.getTime());
+		System.out.println();
+		
+		Calendar dt2 = Calendar.getInstance();
+		System.out.println(new Date(dt2.getTimeInMillis()));
+		System.out.println(dt2.getTime());
+		
+		dt2.clear(Calendar.SECOND);
+		dt2.clear(Calendar.MINUTE);
+		dt2.clear(Calendar.HOUR_OF_DAY);
+		System.out.println(new Date(dt2.getTimeInMillis()));
+		dt2.clear(Calendar.HOUR);
+		System.out.println(dt2.getTime());
+		
+		// 항상 Calendar 객체를 다 쓰면 clear() 메서드로 초기화 해야 함.
+		// 그 후에 날짜와 시간을 set() 메서드로 세팅해야 함.
+		// 안그러면 ms 단위로 오차가 발생함.
 
 	}
 
@@ -131,5 +157,15 @@ time1 : 10시 20분 30초
 time2 : 20시 30분 10초
 
 차이는 36580초!
-차이는 10시간 9분 40초 
+차이는 10시간 9분 40초
+
+Wed Nov 09 23:58:54 KST 2022
+Wed Nov 09 23:58:54 KST 2022
+Thu Jan 01 00:00:00 KST 1970
+Thu Jan 01 00:00:00 KST 1970
+
+Wed Nov 09 23:58:54 KST 2022
+Wed Nov 09 23:58:54 KST 2022
+Wed Nov 09 23:00:00 KST 2022
+Wed Nov 09 12:00:00 KST 2022
 */
