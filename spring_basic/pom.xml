@@ -1,0 +1,25 @@
+<!-- AOP 기능을 사용하기 위한 라이브러리 시작 -->
+
+  <!-- AspectJ -->
+	    	<dependency>
+			      <groupId>org.aspectj</groupId>
+    		  	<artifactId>aspectjrt</artifactId>
+	    		  <version>${org.aspectj-version}</version>
+	    	</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.springframework/spring-aop -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
+            <version>${org.springframework-version}</version>
+        </dependency>
+
+<!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
+        <dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjweaver</artifactId>
+                <version>1.9.9.1</version>
+                <scope>runtime</scope>
+        </dependency>
+
+<!-- AOP 기능을 사용하기 위한 라이브러리 끝 -->
