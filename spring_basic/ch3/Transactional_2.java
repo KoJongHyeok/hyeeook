@@ -9,8 +9,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-// ************************** TransactionManager를 자동으로 주입해서 처리하는 코드 **************************
-
 @Repository
 public class A1Dao {
 
