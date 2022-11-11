@@ -17,13 +17,13 @@
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------- -->
 	
-<!-- Transaction 기능을 사용하기 위한 코드 시작 -->
+<!-- TransactionManager를 Bean으로 등록하기 위한 코드 시작 -->
 	
 	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
 		<property name="dataSource" ref="dataSource"/>
 	</bean>
 	<tx:annotation-driven/>		<!-- @Transactional 애너테이션을 사용하기 위해 작성 -->
 	
-<!-- Transaction 기능을 사용하기 위한 코드 시작 -->
+<!-- TransactionManager를 Bean으로 등록하기 위한 코드 끝 -->
 	
 </beans>
