@@ -9,8 +9,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-// ************************** TransactionManager를 수동으로 주입해서 처리하는 코드 **************************
-
 @Repository     // Dao에 붙이는 애너테이션
 public class A1Dao {
 
