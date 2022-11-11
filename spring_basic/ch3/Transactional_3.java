@@ -29,7 +29,7 @@ public class TxService {
         a1Dao.insert(1, 100);
         a1Dao.insert(1, 200);
 
-        // @Transactional : RuntimeException, Error만 rollback 처리하기 때문.
+        // @Transactional : RuntimeException, Error만 rollback 처리.
     }
 
 
