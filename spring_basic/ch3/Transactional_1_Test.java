@@ -13,6 +13,8 @@ import org.springframework.transaction.support.DefaultTransactionDefinition;
 
 import javax.sql.DataSource;
 
+// ************************** TransactionManager를 수동으로 주입해서 처리하는 코드 **************************
+
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {"file:src/main/webapp/WEB-INF/spring/**/root-context.xml"})
 public class A1DaoTest extends TestCase {
