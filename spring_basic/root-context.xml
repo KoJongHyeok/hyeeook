@@ -8,11 +8,22 @@
 		http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-<!-- AOP 기능을 사용하기 위한 부분 시작 -->
+<!-- AOP 기능을 사용하기 위한 코드 시작 -->
 	
 	<aop:aspectj-autoproxy />	<!-- aop 기능을 사용하기 위한 태그 -->
 	<context:component-scan base-package="com.fastcampus.ch3.aop" />	<!-- 상황에 맞게 패키지 수정 요망 -->
 	
-<!-- AOP 기능을 사용하기 위한 부분 끝 -->
+<!-- AOP 기능을 사용하기 위한 코드 끝 -->
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------- -->
+	
+<!-- Transaction 기능을 사용하기 위한 코드 시작 -->
+	
+	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource"/>
+	</bean>
+	<tx:annotation-driven/>		<!-- @Transactional 애너테이션을 사용하기 위해 작성 -->
+	
+<!-- Transaction 기능을 사용하기 위한 코드 시작 -->
 	
 </beans>
