@@ -1,0 +1,3 @@
+<!-- web 관련 설정 파일 -->
+
+<!-- view-controller : GET 요청만 허용, POST 요청은 허용 안함 -->
