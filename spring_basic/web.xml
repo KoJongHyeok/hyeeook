@@ -1,4 +1,4 @@
-<!-- 경로 : src -> main -> webapp -> WEB-INF -> web.xml -->
+<!-- 경로 : src -> main -> webapp -> WEB-INF -> web.xml -->	<!-- Tomcat 개별 설정 -->
 
 	<!-- 한글 변환 필터 시작 -->
 	<filter>
