@@ -1,3 +1,5 @@
+<!-- non-web 관련 설정 파일 -->
+
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns:mvc="http://www.springframework.org/schema/mvc"
 	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
