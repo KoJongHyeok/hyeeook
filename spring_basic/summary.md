@@ -55,6 +55,27 @@ ___
 > - '/C:\Users\insb1\.m2\repository\org\springframework\spring-web\5.0.7.RELEASE' 폴더에서 'spring-web-5.0.7.RELEASE.jar' : 실제 모듈, 'spring-web-5.0.7.RELEASE-sources.jar' : 소스 파일
 
 ___
+
+### @RequestParam
+> - 요청의 파라미터를 연결할 매개변수에 붙이는 애너테이션, 생략가능.
+> ~~~
+> @RequestMapping("/requestParam")
+> public String main(@RequestParam(name="year" required=false) String year) {}
+> public String main(String year) {}        (위와 동일한 코드)
+>         >> http://localhost/ch2/requestParam >> year=null
+>         >> http://localhost/ch2/requestParam?year >> year=""
+>         >> http://localhost/ch2/requestParam?year= >> year=""
+> ~~~
+> ~~~
+> @RequestMapping("/requestParam")
+> public String main(@RequestParam(name="year" required=true) String year) {}
+> public String main(@RequestParam String year) {}        (위와 동일한 코드)
+>         >> http://localhost/ch2/requestParam >> year=null, 400 Bad Request.
+>         >> http://localhost/ch2/requestParam?year >> year=""
+>         >> http://localhost/ch2/requestParam?year= >> year=""
+> ~~~
+
+___
 ### @RequestMapping의 URL패턴
 
 |     |종류|URL패턴|매칭URL|
