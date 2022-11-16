@@ -58,7 +58,7 @@ ___
 
 ### @RequestParam
 > 1. 요청의 파라미터를 연결할 매개변수에 붙이는 애너테이션, 생략가능.
-> ~~~
+> ~~~java
 > @RequestMapping("/requestParam")
 > public String main(@RequestParam(name="year" required=false) String year) {}
 > public String main(String year) {}        (위와 동일한 코드)
@@ -66,7 +66,7 @@ ___
 >         >> http://localhost/ch2/requestParam?year >> year=""
 >         >> http://localhost/ch2/requestParam?year= >> year=""
 > ~~~
-> ~~~
+> ~~~java
 > @RequestMapping("/requestParam")
 > public String main(@RequestParam(name="year" required=true) String year) {}
 > public String main(@RequestParam String year) {}        (위와 동일한 코드)
@@ -74,7 +74,7 @@ ___
 >         >> http://localhost/ch2/requestParam?year >> year=""
 >         >> http://localhost/ch2/requestParam?year= >> year=""
 > ~~~
-> ~~~
+> ~~~java
 > @RequestMapping("/requestParam")
 > public String main(@RequestParam(required=false) int year) {}
 > public String main(String year) {}        (위와 동일한 코드)
@@ -86,7 +86,7 @@ ___
 > ~~~
 
 > 2. @RequestParam을 붙일 매개변수가 여러개라면 해당 매개변수 앞에 각각 붙여야 함.
-> ~~~
+> ~~~java
 > @RequestMapping("/requestParam")
 > public String main(@RequestParam(required=false) int year,
 >                            @RequestParam(required=false) int month,
@@ -94,7 +94,7 @@ ___
 > ~~~
 
 > 3. 'required=false'의 경우 기본값을 설정해야 함.
-> ~~~
+> ~~~java
 > @RequestMapping("/requestParam")
 > public String main(@RequestParam(required=false, defaultValue="1") int year) {}
 >         >> http://localhost/ch2/requestParam >> year=null >> year=1
