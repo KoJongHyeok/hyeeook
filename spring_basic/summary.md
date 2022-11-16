@@ -93,6 +93,9 @@ ___
 >         >> http://localhost/ch2/requestParam?year >> year="" >> year=1
 >         >> http://localhost/ch2/requestParam?year= >> year="" >> year=1
 > ~~~
+> 
+> - 'required=true'의 경우 클라이언트가 매개변수를 입력하지 않거나 잘못 입력할 때를 대비해야 함.
+> - 올바른 값을 입력하도록 유도하는 view를 보여주는 등 예외처리를 해야 함.
 
 ___
 ### @RequestMapping의 URL패턴
