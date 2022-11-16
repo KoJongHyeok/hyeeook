@@ -62,10 +62,11 @@ ___
 > @RequestMapping("/requestParam")
 > public String main(@RequestParam(name="year" required=false) String year) {}
 > public String main(String year) {}        (위와 동일한 코드)
->         >> http://localhost/ch2/requestParam >> year=null
->         >> http://localhost/ch2/requestParam?year >> year=""
->         >> http://localhost/ch2/requestParam?year= >> year=""
 > ~~~
+> - http://localhost/ch2/requestParam >> year=null
+> - http://localhost/ch2/requestParam?year >> year=""
+> - http://localhost/ch2/requestParam?year= >> year=""
+
 > ~~~java
 > @RequestMapping("/requestParam")
 > public String main(@RequestParam(name="year" required=true) String year) {}
