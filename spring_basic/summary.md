@@ -58,6 +58,7 @@ ___
 
 ### @RequestParam
 > - 요청의 파라미터를 연결할 매개변수에 붙이는 애너테이션, 생략가능.
+> - 'required=false'의 경우'defaultValue="1" 등으로 기본값을 설정해야 함.'
 > ~~~
 > @RequestMapping("/requestParam")
 > public String main(@RequestParam(name="year" required=false) String year) {}
