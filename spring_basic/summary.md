@@ -58,7 +58,6 @@ ___
 
 ### @RequestParam
 > - 요청의 파라미터를 연결할 매개변수에 붙이는 애너테이션, 생략가능.
-> - 'required=false'의 경우'defaultValue="1" 등으로 기본값을 설정해야 함.'
 > ~~~
 > @RequestMapping("/requestParam")
 > public String main(@RequestParam(name="year" required=false) String year) {}
@@ -84,6 +83,11 @@ ___
 >                                              >> 클라이언트는 잘못한 부분이 없음.
 >         >> http://localhost/ch2/requestParam?year >> 400 Bad Request, year="", 자동으로 year 값에 빈문자열이 들어오는데 빈문자열은 int로 변환 불가하므로 에러.
 >         >> http://localhost/ch2/requestParam?year= >> 필수입력이 아님에도 매개변수를 굳이 입력했는데 제대로 입력하지 않은 클라이언트의 잘못.
+> ~~~
+> 
+> - 'required=false'의 경우 기본값을 설정해야 함.
+> ~~~
+> public String main(@RequestParam(required=false, defaultValue="1") int year) {}
 > ~~~
 
 ___
