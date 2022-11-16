@@ -67,9 +67,8 @@ ___
 > > - http://localhost/ch2/requestParam
 > >   - year=null
 > > - http://localhost/ch2/requestParam?year
-> >   - year=""
-> > - http://localhost/ch2/requestParam?year=
-> >   - year=""
+> >   - http://localhost/ch2/requestParam?year=
+> >     - year=""
 > 
 > > ~~~java
 > > @RequestMapping("/requestParam")
@@ -79,9 +78,8 @@ ___
 > > - http://localhost/ch2/requestParam
 > >   - year=null, 400 Bad Request.
 > > - http://localhost/ch2/requestParam?year
-> >   - year=""
-> > - http://localhost/ch2/requestParam?year=
-> >   - year=""
+> >   - http://localhost/ch2/requestParam?year=
+> >     - year=""
 >
 > > ~~~java
 > > @RequestMapping("/requestParam")
