@@ -75,6 +75,16 @@ ___
 >         >> http://localhost/ch2/requestParam?year >> year=""
 >         >> http://localhost/ch2/requestParam?year= >> year=""
 > ~~~
+> ~~~
+> @RequestMapping("/requestParam")
+> public String main(@RequestParam(required=false) int year) {}
+> public String main(String year) {}        (위와 동일한 코드)
+>         >> http://localhost/ch2/requestParam >> 500 java.lang.IllegalStateException, year=null, null을 int로 변환 불가하므로 에러.
+>                                              >> 필수입력이 아니라서 클라이언트는 매개변수를 입력하지 않았는데 서버에서 매개변수를 입력받지 않을 경우를 대비하지 못함.
+>                                              >> 클라이언트는 잘못한 부분이 없음.
+>         >> http://localhost/ch2/requestParam?year >> 400 Bad Request, year="", 자동으로 year 값에 빈문자열이 들어오는데 빈문자열은 int로 변환 불가하므로 에러.
+>         >> http://localhost/ch2/requestParam?year= >> 필수입력이 아님에도 매개변수를 굳이 입력했는데 제대로 입력하지 않은 클라이언트의 잘못.
+> ~~~
 
 ___
 ### @RequestMapping의 URL패턴
