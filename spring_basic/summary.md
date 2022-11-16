@@ -87,7 +87,11 @@ ___
 > 
 > - 'required=false'의 경우 기본값을 설정해야 함.
 > ~~~
+> @RequestMapping("/requestParam")
 > public String main(@RequestParam(required=false, defaultValue="1") int year) {}
+>         >> http://localhost/ch2/requestParam >> year=null >> year=1
+>         >> http://localhost/ch2/requestParam?year >> year="" >> year=1
+>         >> http://localhost/ch2/requestParam?year= >> year="" >> year=1
 > ~~~
 
 ___
