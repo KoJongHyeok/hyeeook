@@ -135,3 +135,38 @@ ___
 |      |redirect|forward|
 |------|--------|-------|
 |Method|GET||
+
+___
+
+### 예외 처리
+> > ~~~java
+> > @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
+> > @ControllerAdvice("com.fastcampus.ch2")
+> > public class GlobalCatcher {
+> > 
+> >     @ExceptionHandler(Exception.class)
+> >     public String catcher1() {
+> >         return "error";
+> >     }
+> > 
+> >     @ExceptionHandler({NullPointerException.class, FileNotFoundException.class})
+> >     public String catcher2(Exception e, Model m) {
+> >         m.addAttribute("e", e);
+> >         return "error";
+> >     }
+> > 
+> > }
+> > ~~~
+> 
+> > - @ControllerAdvice
+> > - 전역 예외 처리 클래스(패키지 지정 가능).
+> > - 예외 처리 메서드가 중복되는 경우, 컨트롤러 내의 예외 처리 메서드가 우선됨.
+> 
+> > - @ResponseStatus
+> > - 응답 메세지의 상태 코드를 변경할 때 사용.
+> >   - (1) 예외 처리 메서드 앞에 붙임.
+> >     - ExceptionHandler가 예외를 처리해서 error.jsp 화면을 보여주면 상태 코드가 200(요청 처리 성)으로 표기됨.
+> >     - 정상 처리된 것이 아니므로 @ResponseStatus 애너테이션을 붙여서 400 또는 500으로 상태 코드를 변경해야 함.
+> >   - (2) 사용자 정의 예외 클래스 앞에 붙임.
+> >     - 예외 코드의 디폴트는 500.
+> >     - 지정하고 싶은 예외 코드로 변경할 수 있음.
