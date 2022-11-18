@@ -29,9 +29,11 @@
 
 <!-- ---------------------------------------------------------------------------------------------------------- -->
 	
-	<!-- 예외 상태 코드별 error view 지정 예시, 코드별로 계속 view를 추가할 수 있음. -->
-	<!-- view 파일 상단에 isErrorPage="true" 작성하면 jsp 특성상 예외 상태 코드가 500으로 강제 설정됨. -->
-	<!-- isErrorPage="false" 작성하면 내가 설정한 상태 코드로 설정됨. -->
+	<!--
+	- 예외 상태 코드별 error view 지정 예시, 코드별로 계속 view를 추가할 수 있음.
+	- view 파일 상단에 isErrorPage="true" 작성하면 jsp 특성상 예외 상태 코드가 500으로 강제 설정됨.
+	- isErrorPage="false" 작성하면 내가 설정한 상태 코드로 설정되고 pageContext.exception 기본 객체를 사용할 수 있음.
+	-->
 	<error-page>
 		<error-code>400</error-code>		<!-- 예외 상태 코드 작성란 -->
 		<location>/error400.jsp</location>	<!-- src/main/webapp/error400.jsp -->
