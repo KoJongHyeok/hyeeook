@@ -6,7 +6,7 @@
 
 <!-- --------------------------------------------------------------------------------------------------------------------------------------------------- -->
 	
-	<!-- 예외 종류별 error 페이지 지정 예시, 코드별로 계속 페이지를 추가할 수 있음. -->
+	<!-- 예외 종류별 error view 지정 예시, 코드별로 계속 페이지를 추가할 수 있음. -->
 	<beans:bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
 		<beans:property name="defaultErrorView" value="error"/>
     		<beans:property name="exceptionMappings">
