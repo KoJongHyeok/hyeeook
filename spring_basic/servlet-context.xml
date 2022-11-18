@@ -11,7 +11,8 @@
 		<beans:property name="defaultErrorView" value="error"/>
     		<beans:property name="exceptionMappings">
       			<beans:props>
-        			<beans:prop key="com.fastcampus.ch2.MyException">error400</beans:prop>	<!-- key : 예외 종류 / error400 : 에러 view 파일명 -->
+        			<beans:prop key="com.fastcampus.ch2.MyException1">error400</beans:prop>	<!-- key : 예외 종류 / error400 : 에러 view 파일명 -->
+				<beans:prop key="com.fastcampus.ch2.MyException2">error500</beans:prop>
       			</beans:props>
     		</beans:property>
 		<beans:property name="statusCodes">
