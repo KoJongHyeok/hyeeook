@@ -32,12 +32,12 @@
 	<!-- 예외 코드별 error 페이지 지정 예시 -->
 	<error-page>
 		<error-code>400</error-code>		<!-- 예외 코드 작성란 -->
-		<location>/error400.jsp</location>	<!-- 예외 발생시 보여줄 페이지 경로 작성란 -->
+		<location>/error400.jsp</location>	<!-- src/main/webapp/error400.jsp -->
 	</error-page>
 	
 	<error-page>
 		<error-code>500</error-code>
-		<location>/error500.jsp</location>
+		<location>/error500.jsp</location>	<!-- src/main/webapp/error500.jsp -->
 	</error-page>
 
 <!-- ---------------------------------------------------------------------------------------------------------- -->
