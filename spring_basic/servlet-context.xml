@@ -12,7 +12,7 @@
     		<beans:property name="exceptionMappings">
       			<beans:props>
         			<beans:prop key="com.fastcampus.ch2.MyException1">error400</beans:prop>	<!-- key : 예외 종류 / error400 : 에러 view 파일명 -->
-				<beans:prop key="com.fastcampus.ch2.MyException2">error404</beans:prop>
+				<beans:prop key="com.fastcampus.ch2.MyException2">error404</beans:prop>	<!-- src/main/webapp/WEB-INF/views/error400 -->
       			</beans:props>
     		</beans:property>
 		<beans:property name="statusCodes">
