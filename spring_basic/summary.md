@@ -181,4 +181,4 @@ ___
 >
 > > - 예외 처리 방법
 > > - (1) 예외 코드별 처리 : web.xml >> <error-page> 등록, jsp 파일 생성.
-> > - (2) 예외 종류별 처리 : servlet-context.xml >> bean 등록
+> > - (2) 예외 종류별 처리 : servlet-context.xml >> SimpleMappingExceptionResolver bean 등록
