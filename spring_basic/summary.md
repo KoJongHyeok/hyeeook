@@ -182,3 +182,5 @@ ___
 > > - 예외 처리 방법
 > > - (1) 예외 코드별 처리 : web.xml >> <error-page> 등록, jsp 파일 생성.
 > > - (2) 예외 종류별 처리 : servlet-context.xml >> SimpleMappingExceptionResolver bean 등록
+> > - isErrorPage="true" 작성하면 jsp 특성상 예외 상태 코드가 500으로 강제 설정됨.
+> >   - @ResponseStatus, 예외 코드별 처리, 예외 종류별 처리 등으로 예외를 처리하고 해당 view에서 isErrorPage="false" 작성하면 예외 처리한 것 그대로 상태 코드가 설정됨.
