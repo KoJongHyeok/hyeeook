@@ -12,12 +12,13 @@
     		<beans:property name="exceptionMappings">
       			<beans:props>
         			<beans:prop key="com.fastcampus.ch2.MyException1">error400</beans:prop>	<!-- key : 예외 종류 / error400 : 에러 view 파일명 -->
-				<beans:prop key="com.fastcampus.ch2.MyException2">error500</beans:prop>
+				<beans:prop key="com.fastcampus.ch2.MyException2">error404</beans:prop>
       			</beans:props>
     		</beans:property>
 		<beans:property name="statusCodes">
 			<beans:props>
-        			<beans:prop key="error400">400</beans:prop>
+        			<beans:prop key="error400">400</beans:prop>	<!-- 바로 위의 error400 view에 대한 에러 상태 코드를 400으로 지정 -->
+				<beans:prop key="error404">404</beans:prop>
 			</beans:props>
 		</beans:property>
   	</beans:bean>
