@@ -1,13 +1,17 @@
 <!-- web 관련 설정 파일 -->
 
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
 <!-- view-controller : GET 요청만 허용, POST 요청은 허용 안함 -->
 
-
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------------- -->
+	
+	<!-- 예외 종류별 예외 처리 -->
 	<beans:bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
 		<beans:property name="defaultErrorView" value="error"/>
     		<beans:property name="exceptionMappings">
       			<beans:props>
-        			<beans:prop key="com.fastcampus.ch2.MyException">error400</beans:prop>
+        			<beans:prop key="com.fastcampus.ch2.MyException">error400</beans:prop>	<!-- key : 예외 종류 / error400 : 에러 view 파일명 -->
       			</beans:props>
     		</beans:property>
 		<beans:property name="statusCodes">
@@ -16,3 +20,5 @@
 			</beans:props>
 		</beans:property>
   	</beans:bean>
+
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------------- -->
