@@ -55,12 +55,14 @@
 <!-- ----------------------------------------------------------------------------------------------- -->
 
 <!-- @Component(Component Scanning) 기능을 사용하기 위한 라이브러리 시작 -->
+
 <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
 <dependency>
     <groupId>com.google.guava</groupId>
     <artifactId>guava</artifactId>
     <version>31.1-jre</version>
 </dependency>
+
 <!-- @Component(Component Scanning) 기능을 사용하기 위한 라이브러리 끝 -->
 
 <!-- ----------------------------------------------------------------------------------------------- -->
