@@ -2,29 +2,29 @@
 
 <!-- ----------------------------------------------------------------------------------------------- -->
 
-<!-- 버전만 확인해서 변경하기(1) 시작 -->
-	<properties>
-		<java-version>11</java-version>		<!-- 이 부분 -->
-		<org.springframework-version>5.0.7.RELEASE</org.springframework-version>
-		<org.aspectj-version>1.6.10</org.aspectj-version>
-		<org.slf4j-version>1.6.6</org.slf4j-version>
-	</properties>
-<!-- 버전만 확인해서 변경하기(1) 끝 -->
+	<!-- 버전만 확인해서 변경하기(1) 시작 -->
+		<properties>
+			<java-version>11</java-version>		<!-- 이 부분 -->
+			<org.springframework-version>5.0.7.RELEASE</org.springframework-version>
+			<org.aspectj-version>1.6.10</org.aspectj-version>
+			<org.slf4j-version>1.6.6</org.slf4j-version>
+		</properties>
+	<!-- 버전만 확인해서 변경하기(1) 끝 -->
 
-<!-- 버전만 확인해서 변경하기(2) 시작 -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.5.1</version>
-                <configuration>
-                    <source>${java-version}</source>	<!-- 이 부분 -->
-                    <target>${java-version}</target>	<!-- 이 부분 -->
-                    <compilerArgument>-Xlint:all</compilerArgument>
-                    <showWarnings>true</showWarnings>
-                    <showDeprecation>true</showDeprecation>
-                </configuration>
-            </plugin>
-<!-- 버전만 확인해서 변경하기(2) 끝 -->
+	<!-- 버전만 확인해서 변경하기(2) 시작 -->
+            	<plugin>
+                	<groupId>org.apache.maven.plugins</groupId>
+                	<artifactId>maven-compiler-plugin</artifactId>
+                	<version>2.5.1</version>
+                	<configuration>
+                    		<source>${java-version}</source>	<!-- 이 부분 -->
+                    		<target>${java-version}</target>	<!-- 이 부분 -->
+                    		<compilerArgument>-Xlint:all</compilerArgument>
+                    		<showWarnings>true</showWarnings>
+                    		<showDeprecation>true</showDeprecation>
+                	</configuration>
+            	</plugin>
+	<!-- 버전만 확인해서 변경하기(2) 끝 -->
 
 <!-- ----------------------------------------------------------------------------------------------- -->
 
