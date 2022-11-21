@@ -61,6 +61,6 @@
     <artifactId>guava</artifactId>
     <version>31.1-jre</version>
 </dependency>
-<!-- @Component 기능을 사용하기 위한 라이브러리 끝 -->
+<!-- @Component(Component Scanning) 기능을 사용하기 위한 라이브러리 끝 -->
 
 <!-- ----------------------------------------------------------------------------------------------- -->
