@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="car" class="com.fastcampus.ch3.Car" >
+	<!-- 방법(2), 방법(3) 중 아무것도 작성하지 않으면 Car 클래스의 기본 생성자를 사용함. -->
+	
+	<!-- Car 객체에 속성값 넣기 - 방법(2) 시작 -->
+	<!-- Car 클래스에 setter가 반드시 있어야 함. -->
+ 		<property name="color" value="red" />
+		<property name="oil" value="100" />
+		<property name="engine" ref="engine" />
+		<property name="doors" >
+			<array value-type="com.fastcampus.ch3.Door">
+				<ref bean="door" />
+				<ref bean="door" />
+			</array>
+		</property>
+	<!-- Car 객체에 속성값 넣기 - 방법(2) 끝 -->
+	
+
+	
+	<!-- Car 객체에 속성값 넣기 - 방법(3) 시작 -->
+	<!-- Car 클래스에 모든 필드가 들어간 생성자가 반드시 있어야 함. -->
+		<constructor-arg name="color" value="red" />
+		<constructor-arg name="oil" value="100" />
+		<constructor-arg name="engine" ref="engine" />
+		<constructor-arg name="doors" >
+			<array value-type="com.fastcampus.ch3.Door">
+				<ref bean="door" />
+				<ref bean="door" />
+			</array>
+		</constructor-arg>
+	<!-- Car 객체에 속성값 넣기 - 방법(3) 끝 -->
+	
+	</bean>
+	
+	<bean id="engine" class="com.fastcampus.ch3.Engine" />
+	<bean id="door" class="com.fastcampus.ch3.Door" scope="prototype" />	
+
+</beans>
