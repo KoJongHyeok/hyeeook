@@ -7,7 +7,7 @@ public class DITest {
 	
 	public static void main(String[] args) throws Exception {
 
-		ApplicationContext ac = new GenericXmlApplicationContext("config2.xml");
+		ApplicationContext ac = new GenericXmlApplicationContext("config.xml");
 		
 		Car car = (Car) ac.getBean("car");
 		Car car2 = ac.getBean("car", Car.class);
