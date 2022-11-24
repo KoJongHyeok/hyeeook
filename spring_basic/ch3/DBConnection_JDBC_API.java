@@ -15,6 +15,7 @@ public class DBConnectionTest {
 		String DB_USER = "root";		//-------------------------------- DB ID
 		String DB_PASSWORD = "mysql";	//-------------------------------- DB PWD
 		
+		// DriverManager : JDBC가 제공.
 		Connection conn = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);	// DB에 대한 연결 얻기.
 		Statement stmt = conn.createStatement();	// 연결된 DB에 SQL 명령문을 사용하기 위한 Statement 생성.
 		
