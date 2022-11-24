@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-public class DBConnectionTest {
+public class DBConnection {
 	
 	public static void main(String[] args) throws Exception {
 		// *** JDBC API를 이용하여 DB에 접근하기.
