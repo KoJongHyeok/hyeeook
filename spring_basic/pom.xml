@@ -25,6 +25,15 @@
                 	</configuration>
             	</plugin>
 	<!-- 버전만 확인해서 변경하기(2) 끝 -->
+	
+	<!-- 버전만 확인해서 변경하기(3) 시작 -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+	<!-- 버전만 확인해서 변경하기(3) 끝 -->
 
 <!-- ----------------------------------------------------------------------------------------------- -->
 
