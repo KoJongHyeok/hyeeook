@@ -68,3 +68,16 @@
 	<!-- @Component(Component Scanning) 기능을 사용하기 위한 라이브러리 끝 -->
 
 <!-- ----------------------------------------------------------------------------------------------- -->
+
+	<!-- JDBC API를 이용하여 DB에 접근하기 위한 라이브러리 시작 -->
+
+	<!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
+	<dependency>
+	    <groupId>com.mysql</groupId>
+	    <artifactId>mysql-connector-j</artifactId>
+	    <version>8.0.31</version>
+	</dependency>
+
+	<!-- JDBC API를 이용하여 DB에 접근하기 위한 라이브러리 시작 -->
+
+<!-- ----------------------------------------------------------------------------------------------- -->
