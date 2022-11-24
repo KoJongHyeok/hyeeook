@@ -34,8 +34,8 @@ public class DBConnection {
 		
 		//----------------------------------------------------------------------------------------------------------------------		
 		// DataSource 객체 생성하는 방법(2) : Bean으로 저장해서 생성.
-		ApplicationContext ac = new GenericXmlApplicationContext("file:src/main/webapp/WEB-INF/spring/**/root-context.xml");
-		DataSource ds = ac.getBean(DataSource.class);
+//		ApplicationContext ac = new GenericXmlApplicationContext("file:src/main/webapp/WEB-INF/spring/**/root-context.xml");
+//		DataSource ds = ac.getBean(DataSource.class);
 		
 		//----------------------------------------------------------------------------------------------------------------------
 		
