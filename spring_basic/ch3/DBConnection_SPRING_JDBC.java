@@ -9,12 +9,15 @@ import java.sql.*;
 
 public class DBConnection {
 	
+	// DataSource 객체 생성하는 방법(3) : @Autowired 애너테이션으로 자동 주입.
+	@Autowired ApplicationContext ac;
+	@Autowired DataSource ds;
+	
 	public static void main(String[] args) throws Exception {
 		// *** SPRING JDBC API를 이용하여 DB에 접근하기.
 		
 		//----------------------------------------------------------------------------------------------------------------------
 		// DataSource 객체 생성하는 방법(1) : 직접 생성.
-		
 //		String DB_URL =					//-------------------------------- DB에 접속하기 위한 URL
 //				"jdbc:mysql://localhost:3306/springbasic?useUnicode=true&characterEncoding=utf-8";
 //		String DB_USER = "root";		//-------------------------------- DB ID
@@ -31,7 +34,6 @@ public class DBConnection {
 		
 		//----------------------------------------------------------------------------------------------------------------------		
 		// DataSource 객체 생성하는 방법(2) : Bean으로 저장해서 생성.
-		
 		ApplicationContext ac = new GenericXmlApplicationContext("file:src/main/webapp/WEB-INF/spring/**/root-context.xml");
 		DataSource ds = ac.getBean(DataSource.class);
 		
