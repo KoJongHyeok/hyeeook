@@ -95,16 +95,16 @@
 
 <!-- ----------------------------------------------------------------------------------------------- -->
 
-	<!-- JUnit을 이용하여 테스트하기 위한 라이브러리 시작 -->
+	<!-- JUnit(@RunWith)을 이용하여 테스트하기 위한 라이브러리 시작 -->
 
 	<!-- https://mvnrepository.com/artifact/org.springframework/spring-test -->
 	<dependency>
 	    <groupId>org.springframework</groupId>
 	    <artifactId>spring-test</artifactId>
-	    <version>6.0.0</version>
+	    <version>${org.springframework-version}</version>
 	    <scope>test</scope>
 	</dependency>
 
-	<!-- JUnit을 이용하여 테스트하기 위한 라이브러리 끝 -->
+	<!-- JUnit(@RunWith)을 이용하여 테스트하기 위한 라이브러리 끝 -->
 
 <!-- ----------------------------------------------------------------------------------------------- -->
