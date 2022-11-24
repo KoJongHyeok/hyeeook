@@ -7,7 +7,7 @@ import org.springframework.jdbc.datasource.*;
 import javax.sql.*;
 import java.sql.*;
 
-public class DBConnectionTest {
+public class DBConnection {
 	
 	public static void main(String[] args) throws Exception {
 		// *** SPRING JDBC API를 이용하여 DB에 접근하기.
