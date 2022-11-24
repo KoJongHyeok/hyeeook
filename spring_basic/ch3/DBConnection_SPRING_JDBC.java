@@ -10,7 +10,7 @@ import java.sql.*;
 public class DBConnection {
 	
 	// DataSource 객체 생성하는 방법(3) : @Autowired 애너테이션으로 자동 주입.
-	@Autowired ApplicationContext ac;
+//	@Autowired ApplicationContext ac;
 	@Autowired DataSource ds;
 	
 	public static void main(String[] args) throws Exception {
