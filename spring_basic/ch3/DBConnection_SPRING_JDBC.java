@@ -1,4 +1,3 @@
-package com.fastcampus.ch3;
 
 import org.springframework.context.*;
 import org.springframework.context.support.*;
