@@ -1,4 +1,3 @@
-package com.fastcampus.ch3;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
