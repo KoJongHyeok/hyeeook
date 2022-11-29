@@ -1,4 +1,3 @@
-package com.fastcampus.ch3;
 
 import java.util.Date;
 import java.util.Objects;
