@@ -1,4 +1,3 @@
-package com.fastcampus.ch3.aop;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
