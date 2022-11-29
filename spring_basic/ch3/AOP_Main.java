@@ -1,4 +1,3 @@
-package com.fastcampus.ch3.aop;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
