@@ -117,3 +117,17 @@
 	<!-- JUnit(@RunWith)을 이용하여 테스트하기 위한 라이브러리 끝 -->
 
 <!-- ----------------------------------------------------------------------------------------------- -->
+
+	<!-- @Valid(Validation API) 애너테이션을 사용하기 위한 라이브러리 시작 -->
+
+	<!-- https://mvnrepository.com/artifact/jakarta.validation/jakarta.validation-api -->
+	<dependency>
+	    <groupId>jakarta.validation</groupId>
+	    <artifactId>jakarta.validation-api</artifactId>
+	    <version>3.0.2</version>
+	</dependency>
+
+	<!-- @Valid(Validation API) 애너테이션을 사용하기 위한 라이브러리 끝 -->
+
+<!-- ----------------------------------------------------------------------------------------------- -->
+
