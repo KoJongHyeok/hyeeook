@@ -1,0 +1,14 @@
+# Collections Framework
+
+> - 컬렉션(Collections) : 여러 객체(데이터)를 모아 놓은 것.
+> - 프레임웍(Framework) : 라이브러리(기능) + 프로그래밍 방식을 표준화, 정형화.
+> - 컬렉션 프레임웍(Collections Framework) : 여러 객체를 다루기 위한 표준화된 프로그래밍 방식.
+
+> - 컬렉션 프레임웍의 핵심 인터페이스(컬렉션을 3종류로 구분한 것).
+> - Collection : List와 Set의 공통 부분으로 만든 인터페이스. List와 Set의 조상 인터페이스.
+>
+> |   | 저장 순서 | 중복 허용 | EX |
+> |:---:|:---:|:---:|:---:|
+> | List | o | o | 대기자 명단 |
+> | Set | x | x | 동물의 집합 |
+> | Map | x | key : x / value : o | ID, PASSWORD |
