@@ -12,3 +12,44 @@
 > | List | o | o | 대기자 명단 |
 > | Set | x | x | 동물의 집합 |
 > | Map | x | key : x / value : o | ID, PASSWORD |
+
+___
+
+> ## ArrayList
+> 
+> > | 생성자 |
+> > |:----:|
+> > | ArrayList() |
+> > | ArrayList(Collection c) |
+> > | ArrayList(int initialCapacity) |
+>
+> > | 추가 |
+> > |:----:|
+> > | boolean add(Object o) |
+> > | void add(int index, Object element) |
+> > | boolean addAll(Collection c) |
+> > | boolean addAll(int index, Collection c) |
+>
+> > | 삭제 |
+> > |:----:|
+> > | boolean remove(Object o) |
+> > | Object remove(int index) |
+> > | boolean removeAll(Collection c) |
+> > | void clear() |
+> 
+> > | 검색 |
+> > |:----:|
+> > | int indexOf(Object o) |
+> > | int lastIndexOf(Object o) |
+> > | boolean contains(Object o) |
+> > | Object get(int index) |
+> > | Object set(int index, Object element) |
+> 
+> > | 검색 |
+> > |:----:|
+> > | List subList(int fromIndex, int toIndex) |
+> > | Object[] toArray() |
+> > | Object[] toArray(Object[] a) |
+> > | boolean isEmpty() |
+> > | void trimToSize() |
+> > | int size() |
