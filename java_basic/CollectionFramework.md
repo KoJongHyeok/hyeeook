@@ -45,7 +45,7 @@ ___
 > > | Object get(int index) |
 > > | Object set(int index, Object element) |
 > 
-> > | 검색 |
+> > | 변환 |
 > > |:----:|
 > > | List subList(int fromIndex, int toIndex) |
 > > | Object[] toArray() |
