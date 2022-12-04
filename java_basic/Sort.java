@@ -25,3 +25,11 @@ for (int i=iArr.length-1; i>0; i--) {
 	}
 	System.out.println(Arrays.toString(iArr));
 }
+
+
+static void swap(int[] arr, int x, int y) {
+	int tmp = 0;
+	tmp = arr[x];
+	arr[x] = arr[y];
+	arr[y] = tmp;
+}
