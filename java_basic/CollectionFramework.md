@@ -53,3 +53,24 @@ ___
 > > | boolean isEmpty() |
 > > | void trimToSize() |
 > > | int size() |
+
+___
+
+> ## Stack & Queue
+>
+> > | Stack |
+> > |:----:|
+> > | boolean empty() |
+> > | Object peek() |
+> > | Object pop() |
+> > | Object push(Object item) |
+> > | int search(Object o) |
+> 
+> > | Queue |
+> > |:----:|
+> > | boolean add(Object o) |
+> > | Object remove() |
+> > | Object element() |
+> > | boolean offer(Object o) |
+> > | Object poll() |
+> > | Object peek() |
