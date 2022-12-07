@@ -10,7 +10,11 @@
 | static void setAll(int[] array, IntUnaryOperator generator) | 배열 채우기 |
 | static void sort(int[] a) | 정렬 |
 | static int binarySearch(int[] a, int key) | 검색(반드시 먼저 정렬되어있어야 함) |
+| static String deepToString(Object[] a) | 다차원 배열 출력 |
+| static boolean deepEquals(Object[] a1, Object[] a2) | 다차원 배열 비교 |
+| static List asList(Object... a) | 배열을 List로 변환(읽기 전용) |
 
+*** Object... a : 가변 매개변수
 ___
 
 ### 순차 탐색(검색)과 이진 탐색(검색)
