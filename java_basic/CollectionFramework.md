@@ -111,3 +111,13 @@ ___
 >           ...
 > }
 > ```
+> ```java
+> List list = new ArrayList();
+> Iterator it = list.iterator();
+> 
+> while (it.hasNext()) {
+>	    ...
+>	  it.next();
+>		  ...
+> }
+> ```
