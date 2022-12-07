@@ -122,8 +122,9 @@ ___
 > ```
 > 
 > ```java
-> List list = new ArrayList();
-> Iterator it = list.iterator();
+> Collection c = new ArrayList();
+> // Collection c = new HashSet();
+> Iterator it = c.iterator();
 > 
 > while (it.hasNext()) {
 >	...
@@ -132,13 +133,3 @@ ___
 > }
 > ```
 > 
-> ```java
-> Set set = new TreeSet();
->	Iterator it = set.iterator();
->	
->	while (it.hasNext()) {
->	...
->	  it.next();
->   ...
-> }
-> ```
