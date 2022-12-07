@@ -1,6 +1,6 @@
 # Object
 
-> ## boolean equals(Object obj)
+## boolean equals(Object obj)
 > 
 > ```java
 > class People {
@@ -27,4 +27,4 @@
 > 	}
 > 
 > }
-```
+> ```
