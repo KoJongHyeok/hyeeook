@@ -132,4 +132,12 @@ ___
 >   ...
 > }
 > ```
-> 
+> <br>
+> - Map에는 iterator() 메서드가 없는데 사용하려면?
+> - keySet(), entrySet(), values() 메서드를 호출해서 Set으로 변환 후 사용.
+> ```java
+> Map map = new HashMap();
+>   ...
+>	Iterator it = map.entrySet().iterator();
+>   ...
+> ```
