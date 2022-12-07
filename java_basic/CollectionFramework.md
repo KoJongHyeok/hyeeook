@@ -56,17 +56,19 @@ ___
 
 ___
 
-> ## Stack & Queue
->
-> > | Stack |
+> ## Stack
+> 
+> > | 메서드 |
 > > |:----:|
 > > | boolean empty() |
 > > | Object peek() |
 > > | Object pop() |
 > > | Object push(Object item) |
 > > | int search(Object o) |
+
+> ## Queue
 > 
-> > | Queue |
+> > | 메서드 |
 > > |:----:|
 > > | boolean add(Object o) |
 > > | Object remove() |
@@ -74,3 +76,12 @@ ___
 > > | boolean offer(Object o) |
 > > | Object poll() |
 > > | Object peek() |
+
+___
+
+> ## Iterator - 컬렉션에 저장된 데이터를 접근하는데(읽어오는데) 사용되는 인터페이스.
+> 
+> > | 메서드 | 특징 |
+> > |:----:|:----:|
+> > | boolean hasNext() | 읽어 올 요소가 남아있는지 확인 |
+> > | Object next() | 다음 요소를 읽어 옴 |
