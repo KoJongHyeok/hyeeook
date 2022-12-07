@@ -2,8 +2,13 @@
 <!DOCTYPE configuration
 		PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 		"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<!-- *Mapper.xml에서 type을 짧고 간단하게 작성하기 위한 파일 -->
+<!-- alias(별명) : 대소문자 구별 안 함 -->
+<!-- type(실제 이름) : 대소문자 구별함 -->
+
 <configuration>
-	<typeAliases>		<!-- alias : 대소문자 구별 안 함. -->
+	<typeAliases>
 		<typeAlias alias="BoardDTO" type="com.fastcampus.ch4.BoardDTO"/>
 	</typeAliases>
 </configuration>
