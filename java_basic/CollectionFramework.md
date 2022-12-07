@@ -111,6 +111,7 @@ ___
 
 > ## Iterator 사용법
 > - Collection 인터페이스에 정의된 iterator() 메서드를 호출해서 사용.
+> - iterator()는 일회용이라서 한번 쓰고 나면 다시 얻어와야 함.
 > 
 > ```java
 > public interface Collection {
