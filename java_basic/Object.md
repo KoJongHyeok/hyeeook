@@ -1,7 +1,6 @@
 # Object
 
-## equals
-> - boolean equals(Object obj)
+> ## boolean equals(Object obj)
 > 
 > ```java
 > class People {
@@ -29,5 +28,3 @@
 > 
 > }
 ```
-
-## hashCode
