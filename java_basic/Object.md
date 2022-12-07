@@ -29,7 +29,10 @@
 > }
 > ```
 
-## native int hashCode()
+___
+
+## native int hashCode(), String toString()
+### hashCode()
 > - 객체의 지문
 > - equals() 메서드를 오버라이딩하면 hashCode() 메서드도 오버라이딩 해야 함.
 >   - 두 객체의 equals() 메서드의 결과가 true이면 hashCode 값도 같아야 하기 때문.
@@ -67,3 +70,5 @@
 > 	}
 > } 
 > ```
+
+___
