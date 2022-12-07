@@ -5,7 +5,8 @@
 > 
 > ```java
 > class People {
-> 	int id; // 주민번호
+> 
+>   int id; // 주민번호
 > 
 > 	People() { super(); }
 > 
