@@ -16,43 +16,51 @@
 ___
 
 > ## ArrayList
-> 
-> > | 생성자 |
-> > |:----:|
-> > | ArrayList() |
-> > | ArrayList(Collection c) |
-> > | ArrayList(int initialCapacity) |
->
-> > | 메서드 |
-> > |:----:|
-> > | boolean add(Object o) |
-> > | void add(int index, Object element) |
-> > | boolean addAll(Collection c) |
-> > | boolean addAll(int index, Collection c) |
->
-> > | 메서드 |
-> > |:----:|
-> > | boolean remove(Object o) |
-> > | Object remove(int index) |
-> > | boolean removeAll(Collection c) |
-> > | void clear() |
-> 
-> > | 메서드 |
-> > |:----:|
-> > | int indexOf(Object o) |
-> > | int lastIndexOf(Object o) |
-> > | boolean contains(Object o) |
-> > | Object get(int index) |
-> > | Object set(int index, Object element) |
-> 
-> > | 메서드 |
-> > |:----:|
-> > | List subList(int fromIndex, int toIndex) |
-> > | Object[] toArray() |
-> > | Object[] toArray(Object[] a) |
-> > | boolean isEmpty() |
-> > | void trimToSize() |
-> > | int size() |
+
+> | 생성자 |
+> |:----:|
+> | ArrayList() |
+> | ArrayList(Collection c) |
+> | ArrayList(int initialCapacity) |
+
+<br>
+
+> | 메서드 |
+> |:----:|
+> | boolean add(Object o) |
+> | void add(int index, Object element) |
+> | boolean addAll(Collection c) |
+> | boolean addAll(int index, Collection c) |
+
+<br>
+
+> | 메서드 |
+> |:----:|
+> | boolean remove(Object o) |
+> | Object remove(int index) |
+> | boolean removeAll(Collection c) |
+> | void clear() |
+
+<br>
+
+> | 메서드 |
+> |:----:|
+> | int indexOf(Object o) |
+> | int lastIndexOf(Object o) |
+> | boolean contains(Object o) |
+> | Object get(int index) |
+> | Object set(int index, Object element) |
+
+<br>
+
+> | 메서드 |
+> |:----:|
+> | List subList(int fromIndex, int toIndex) |
+> | Object[] toArray() |
+> | Object[] toArray(Object[] a) |
+> | boolean isEmpty() |
+> | void trimToSize() |
+> | int size() |
 
 ___
 
@@ -84,20 +92,20 @@ ___
 > ## Iterator
 > - 컬렉션에 저장된 데이터를 접근하는데(읽어오는데) 사용되는 인터페이스.
 > 
-> > | 메서드 | 특징 |
-> > |:----:|:----:|
-> > | boolean hasNext() | 읽어 올 요소가 남아있는지 확인 |
-> > | Object next() | 다음 요소를 읽어 옴 |
+> | 메서드 | 특징 |
+> |:----:|:----:|
+> | boolean hasNext() | 읽어 올 요소가 남아있는지 확인 |
+> | Object next() | 다음 요소를 읽어 옴 |
 
 <br>
 
 > ## Enumeration
 > - Iterator의 old 버전.
 > 
-> > | 메서드 | 특징 |
-> > |:----:|:----:|
-> > | boolean hasMoreElements() | Iterator의 hasNext()와 동일 |
-> > | Object nextElement() | Iterator의 next()와 동일함 |
+> | 메서드 | 특징 |
+> |:----:|:----:|
+> | boolean hasMoreElements() | Iterator의 hasNext()와 동일 |
+> | Object nextElement() | Iterator의 next()와 동일함 |
 
 <br>
 
