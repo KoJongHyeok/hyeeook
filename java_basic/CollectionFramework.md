@@ -65,7 +65,9 @@ ___
 > > | Object pop() |
 > > | Object push(Object item) |
 > > | int search(Object o) |
-  
+
+<br>
+
 > ## Queue
 > 
 > > | 메서드 |
