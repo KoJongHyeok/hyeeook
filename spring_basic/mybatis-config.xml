@@ -1,9 +1,10 @@
+<!-- *Mapper.xml에서 type을 짧고 간단하게 작성하기 위한 파일 -->
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration
 		PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 		"http://mybatis.org/dtd/mybatis-3-config.dtd">
 
-<!-- *Mapper.xml에서 type을 짧고 간단하게 작성하기 위한 파일 -->
 <!-- alias(별명) : 대소문자 구별 안 함 -->
 <!-- type(실제 이름) : 대소문자 구별함 -->
 
