@@ -94,5 +94,5 @@ ___
 > 
 > > | 메서드 | 특징 |
 > > |:----:|:----:|
-> > |  |  |
-> > |||
+> > | boolean hasMoreElements() | Iterator의 hasNext() |
+> > | Object nextElement() | Iterator의 next() |
