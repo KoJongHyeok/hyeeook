@@ -88,7 +88,7 @@
 	<!-- SqlSessionFactory : mybatis가 제공하는 인터페이스 -->
 	<!-- SqlSessionFactoryBean : mybatis-spring이 제공하는 클래스로 SqlSessionFactory의 구현체 -->
 	<!-- SqlSession : mybatis가 제공하는 인터페이스 -->
-	<!-- SqlSessionTemplate : mybatis-spring이 제공하는 클래스로 SqlSession의 구현체,  -->
+	<!-- SqlSessionTemplate : mybatis-spring이 제공하는 클래스로 SqlSession의 구현체, thread-safe -->
 	
 	<!-- MyBatis를 사용하기 위해 sqlSession을 Bean으로 등록하는 코드 끝 -->
 	
