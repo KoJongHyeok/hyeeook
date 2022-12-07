@@ -23,21 +23,21 @@ ___
 > > | ArrayList(Collection c) |
 > > | ArrayList(int initialCapacity) |
 >
-> > | 추가 |
+> > | 메서드 |
 > > |:----:|
 > > | boolean add(Object o) |
 > > | void add(int index, Object element) |
 > > | boolean addAll(Collection c) |
 > > | boolean addAll(int index, Collection c) |
 >
-> > | 삭제 |
+> > | 메서드 |
 > > |:----:|
 > > | boolean remove(Object o) |
 > > | Object remove(int index) |
 > > | boolean removeAll(Collection c) |
 > > | void clear() |
 > 
-> > | 검색 |
+> > | 메서드 |
 > > |:----:|
 > > | int indexOf(Object o) |
 > > | int lastIndexOf(Object o) |
@@ -45,7 +45,7 @@ ___
 > > | Object get(int index) |
 > > | Object set(int index, Object element) |
 > 
-> > | 변환 |
+> > | 메서드 |
 > > |:----:|
 > > | List subList(int fromIndex, int toIndex) |
 > > | Object[] toArray() |
@@ -81,7 +81,8 @@ ___
 
 ___
 
-> ## Iterator - 컬렉션에 저장된 데이터를 접근하는데(읽어오는데) 사용되는 인터페이스.
+> ## Iterator
+> - 컬렉션에 저장된 데이터를 접근하는데(읽어오는데) 사용되는 인터페이스.
 > 
 > > | 메서드 | 특징 |
 > > |:----:|:----:|
@@ -90,9 +91,10 @@ ___
 
 <br>
 
-> ## Enumeration - Iterator의 old 버전.
+> ## Enumeration
+> - Iterator의 old 버전.
 > 
 > > | 메서드 | 특징 |
 > > |:----:|:----:|
-> > | boolean hasMoreElements() | Iterator의 hasNext() |
-> > | Object nextElement() | Iterator의 next() |
+> > | boolean hasMoreElements() | Iterator의 hasNext()와 동일 |
+> > | Object nextElement() | Iterator의 next()와 동일함 |
