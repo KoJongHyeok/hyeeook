@@ -110,34 +110,34 @@ ___
 <br>
 
 > ## Iterator 사용법
-> - Collection 인터페이스에 정의된 iterator() 메서드를 호출해서 사용.
-> - iterator()는 일회용이라서 한번 쓰고 나면 다시 얻어와야 함.
-> 
-> ```java
-> public interface Collection {
->           ...
->     Iterator iterator();
->           ...
-> }
-> ```
-> 
-> ```java
-> Collection c = new ArrayList();
-> // Collection c = new HashSet();
-> Iterator it = c.iterator();
-> 
-> while (it.hasNext()) {
->	...
->	  it.next();
->   ...
-> }
-> ```
-> <br>
-> - Map에는 iterator() 메서드가 없는데 사용하려면?
-> - keySet(), entrySet(), values() 메서드를 호출해서 Set으로 변환 후 사용.
-> ```java
-> Map map = new HashMap();
->   ...
->	Iterator it = map.entrySet().iterator();
->   ...
-> ```
+> > - Collection 인터페이스에 정의된 iterator() 메서드를 호출해서 사용.
+> > - iterator()는 일회용이라서 한번 쓰고 나면 다시 얻어와야 함.
+> > 
+> > ```java
+> > public interface Collection {
+> >           ...
+> >     Iterator iterator();
+> >           ...
+> > }
+> > ```
+> > 
+> > ```java
+> > Collection c = new ArrayList();
+> > // Collection c = new HashSet();
+> > Iterator it = c.iterator();
+> > 
+> > while (it.hasNext()) {
+>	>   ...
+>	>   it.next();
+> >   ...
+> > }
+> > ```
+>
+> > - Map에는 iterator() 메서드가 없는데 사용하려면?
+> > - keySet(), entrySet(), values() 메서드를 호출해서 Set으로 변환 후 사용.
+> > ```java
+> > Map map = new HashMap();
+> >   ...
+>	> Iterator it = map.entrySet().iterator();
+> >   ...
+> > ```
