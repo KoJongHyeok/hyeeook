@@ -17,4 +17,5 @@ public class Instanceof_Test {
 		System.out.println(useChild_WithParent);
 		System.out.println(useParent_WithChild);
 	}
+	
 }
