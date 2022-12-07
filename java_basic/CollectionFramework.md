@@ -111,11 +111,23 @@ ___
 >           ...
 > }
 > ```
+> 
 > ```java
 > List list = new ArrayList();
 > Iterator it = list.iterator();
 > 
 > while (it.hasNext()) {
+>	...
+>	  it.next();
+>   ...
+> }
+> ```
+> 
+> ```java
+> Set set = new TreeSet();
+>	Iterator it = set.iterator();
+>	
+>	while (it.hasNext()) {
 >	...
 >	  it.next();
 >   ...
