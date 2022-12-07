@@ -58,26 +58,26 @@ ___
 
 > ## Stack
 > 
-> > | 메서드 |
-> > |:----:|
-> > | boolean empty() |
-> > | Object peek() |
-> > | Object pop() |
-> > | Object push(Object item) |
-> > | int search(Object o) |
+> | 메서드 |
+> |:----:|
+> | boolean empty() |
+> | Object peek() |
+> | Object pop() |
+> | Object push(Object item) |
+> | int search(Object o) |
 
 <br>
 
 > ## Queue
 > 
-> > | 메서드 |
-> > |:----:|
-> > | boolean add(Object o) |
-> > | Object remove() |
-> > | Object element() |
-> > | boolean offer(Object o) |
-> > | Object poll() |
-> > | Object peek() |
+> | 메서드 |
+> |:----:|
+> | boolean add(Object o) |
+> | Object remove() |
+> | Object element() |
+> | boolean offer(Object o) |
+> | Object poll() |
+> | Object peek() |
 
 ___
 
@@ -98,3 +98,16 @@ ___
 > > |:----:|:----:|
 > > | boolean hasMoreElements() | Iterator의 hasNext()와 동일 |
 > > | Object nextElement() | Iterator의 next()와 동일함 |
+
+<br>
+
+> ## Iterator 사용법
+> - Collection 인터페이스에 정의된 iterator() 메서드를 호출해서 사용.
+> 
+> ```java
+> public interface Collection {
+>           ...
+>     Iterator iterator();
+>           ...
+> }
+> ```
