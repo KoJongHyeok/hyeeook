@@ -193,8 +193,8 @@ ___
 > 	    int age;
 > 	  ...
 > 	    public int hashCode() {
-> 		    return (name+age).hashCode();	  // 옛날 방법(문자열.hashCode())
-> 		    return Objects.hash(name, age);	// 요즘 방법
+> 		    return (name+age).hashCode(); // 옛날 방법(문자열.hashCode())
+> 		    return Objects.hash(name, age); // 요즘 방법
 > 	    }
 >   }
 >   ```
