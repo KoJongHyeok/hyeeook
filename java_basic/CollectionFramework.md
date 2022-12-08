@@ -178,3 +178,23 @@ ___
 > | int size() |
 > | Object[] toArray() |
 > | Object[] toArray(Object[] a) |
+
+<br>
+
+> - HashSet은 객체를 저장하기 전에 같은 객체가 이미 저장되어 있는지 확인.
+>   - 같은 객체가 없으면 저장하고, 있으면 저장하지 않음.
+> - boolean add(Object o) 메서드는 저장할 객체의 equals(), hashCode() 메서드를 호출.
+>   - 반드시 equals(), hashCode() 메서드를 오버라이딩해야 함.
+>   - hashCode() 메서드 오버라이딩하는 법.
+>   ```java
+>   class Person {
+> 	  String name;
+> 	  int age;
+> 	
+> 	  ...
+> 	  public int hashCode() {
+> 		  return (name+age).hashCode();	// 옛날 방법(문자열.hashCode())
+> 		  return Objects.hash(name, age);	// 요즘 방법
+> 	  }
+>   }
+>   ```
