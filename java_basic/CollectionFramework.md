@@ -189,12 +189,12 @@ ___
 >   - hashCode() 메서드 오버라이딩하는 법.
 >   ```java
 >   class Person {
-> 	  String name;
-> 	  int age;
+> 	    String name;
+> 	    int age;
 > 	  ...
-> 	  public int hashCode() {
-> 		  return (name+age).hashCode();	  // 옛날 방법(문자열.hashCode())
-> 		  return Objects.hash(name, age);	// 요즘 방법
-> 	  }
+> 	    public int hashCode() {
+> 		    return (name+age).hashCode();	  // 옛날 방법(문자열.hashCode())
+> 		    return Objects.hash(name, age);	// 요즘 방법
+> 	    }
 >   }
 >   ```
