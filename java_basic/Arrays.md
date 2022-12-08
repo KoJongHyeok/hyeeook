@@ -14,7 +14,7 @@
 | static boolean ***deepEquals(Object[] a1, Object[] a2)*** | 다차원 배열 비교 |
 | static List ***asList(Object... a)*** | 배열을 List로 변환(읽기 전용) |
 
-*** Object... a : 가변 매개변수
+*** Object... a : 가변 매개변수, (0 ~ n) 개 매개변수 입력 가능. 아무것도 안 넣어도 되고 한 개만 넣어도 됨.
 ___
 
 ### 순차 탐색(검색)과 이진 탐색(검색)
