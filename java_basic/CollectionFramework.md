@@ -141,3 +141,38 @@ ___
 >	> Iterator it = map.entrySet().iterator();
 > >   ...
 > > ```
+
+___
+
+> ## HashSet
+> - 일반적으로 Set을 사용하고 싶다면 HashSet 클래스를 사용하면 됨.
+> - 순서를 유지하고 싶으면, LinkedHashSet 클래스를 사용하면 됨.
+
+> | 생성자 |
+> |:-----:|
+> | HashSet() |
+> | HashSet(Collection c) |
+> | HashSet(int initialCapacity) |
+> | HashSet(int initialCapacity, float loadFactor) |
+
+> | 메서드 |
+> |:-----:|
+> | boolean add(Object o) |
+> | boolean addAll(Collection c) |
+> | boolean remove(Object o) |
+> | boolean removeAll(Collection c) |
+> | boolean retainAll(Collection c) |
+> | void clear() |
+
+> | 메서드 |
+> |:-----:|
+> | boolean contains(Object o) |
+> | boolean containsAll(Collection c) |
+> | Iterator iterator() |
+
+> | 메서드 |
+> |:-----:|
+> | boolean isEmpty() |
+> | int size() |
+> | Object[] toArray() |
+> | Object[] toArray(Object[] a) |
