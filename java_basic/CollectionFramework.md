@@ -159,25 +159,25 @@ ___
 
 > | 메서드 |
 > |:-----:|
-> | boolean add(Object o) |
-> | boolean addAll(Collection c) |
-> | boolean remove(Object o) |
-> | boolean removeAll(Collection c) |
-> | boolean retainAll(Collection c) |
-> | void clear() |
+> | boolean ***add(Object o)*** |
+> | boolean ***addAll(Collection c)*** |
+> | boolean ***remove(Object o)*** |
+> | boolean ***removeAll(Collection c)*** |
+> | boolean ***retainAll(Collection c)*** |
+> | void ***clear()*** |
 
 > | 메서드 |
 > |:-----:|
-> | boolean contains(Object o) |
-> | boolean containsAll(Collection c) |
-> | Iterator iterator() |
+> | boolean ***contains(Object o)*** |
+> | boolean ***containsAll(Collection c)*** |
+> | Iterator ***iterator()*** |
 
 > | 메서드 |
 > |:-----:|
-> | boolean isEmpty() |
-> | int size() |
-> | Object[] toArray() |
-> | Object[] toArray(Object[] a) |
+> | boolean ***isEmpty()*** |
+> | int ***size()*** |
+> | Object[] ***toArray()*** |
+> | Object[] ***toArray(Object[] a)*** |
 
 <br>
 
@@ -190,10 +190,9 @@ ___
 >   class Person {
 > 	  String name;
 > 	  int age;
-> 	
 > 	  ...
 > 	  public int hashCode() {
-> 		  return (name+age).hashCode();	// 옛날 방법(문자열.hashCode())
+> 		  return (name+age).hashCode();	  // 옛날 방법(문자열.hashCode())
 > 		  return Objects.hash(name, age);	// 요즘 방법
 > 	  }
 >   }
