@@ -37,12 +37,12 @@ public class Comparable_Comparator_Test {
 }
 
 	// static void sort(Object[] a, Comparator c)
-	//		>> sort() 메서드에 매개변수로 들어갈 수 있는 비교 기준은 'Comparator'만 가능.
+	//		>> sort() 메서드에 매개변수로 들어갈 수 있는 정렬 기준은 'Comparator'만 가능.
 	// final class String implements ..., Comparable, ...
 	//		>> String 클래스는 Comparable 인터페이스를 구현.
 class Descending implements Comparator {
-	// sort() 메서드에 비교 기준으로 들어가는 Descending 클래스는 Comparator 인터페이스를 구현.
-	// 문자열(String)의 실제 비교 기준이 작성된 compare() 메서드 안에는 Comparable 인터페이스로 형변환.
+	// sort() 메서드에 정렬 기준으로 들어가는 Descending 클래스는 Comparator 인터페이스를 구현.
+	// 문자열(String)의 실제 정렬 기준이 작성된 compare() 메서드 안에는 Comparable 인터페이스로 형변환.
 	@Override
 	public int compare(Object o1, Object o2) {
 		if (o1 instanceof Comparable && o2 instanceof Comparable) {
