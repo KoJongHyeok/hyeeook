@@ -214,7 +214,7 @@ ___
 > >     Object element;	// 저장할 객체
 > >     TreeNode right;	// 오른쪽 자식노드
 > > }
-> ```
+> > ```
 
 <br>
 
