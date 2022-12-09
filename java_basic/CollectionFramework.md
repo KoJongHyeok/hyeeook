@@ -260,4 +260,6 @@ ___
 > | SortedSet ***headSet(Object toElement)*** |
 > | SortedSet ***tailSet(Object fromElement)*** |
 
+- 기본적으로 add(), remove() 등 Collection 인터페이스에 정의된 메서드는 제외함.
+
 ___
