@@ -239,3 +239,25 @@ ___
 > >  6. '7'과 '5'를 비교, '5'가 더 작으니 '7'의 왼쪽에 저장하려고 하는데 이미 저장된 객체가 있으므로 그 객체와 비교.
 > >  7. 이미 저장된 '4'와 '5'를 비교, '5'가 더 크니 '4'의 오른쪽에 저장.
 > - 점점 비교 횟수가 증가함.
+
+<br>
+
+> | 생성자 |
+> |:-----:|
+> | TreeSet() |
+> | TreeSet(Comparator comparator) |
+> | TreeSet(Collection c) |
+
+> | 메서드 |
+> |:-----:|
+> | Object ***first()*** |
+> | Object ***last()*** |
+> | Object ***ceiling(Object o)*** |
+> | Object ***floor(Object o)*** |
+> | Object ***higher(Object o)*** |
+> | Object ***lower(Object o)*** |
+> | SortedSet ***subSet(Object fromElement, Object toElement)*** |
+> | SortedSet ***headSet(Object toElement)*** |
+> | SortedSet ***tailSet(Object fromElement)*** |
+
+___
