@@ -276,3 +276,16 @@ ___
 > ![tree_traversal](./img/tree_traversal.jpg)
 
 ___
+
+## HashMap
+> - Map 인터페이스를 구현한 클래스이므로 데이터를 키(key)와 값(value)의 쌍(pair)으로 저장.
+> - HashMap(동기화 x)은 Hashtable(동기화 o)의 신버전.
+> - 일반적으로 Map을 사용하고 싶다면 HashMap 클래스를 사용하면 됨.
+> - 순서를 유지하려면, LinkedHashMap 클래스를 사용하면 됨.
+> - 해싱(hashing) 기법으로 데이터를 저장하기 때문에 데이터가 많아도 검색이 빠름.
+
+## TreeMap
+> - 사실 TreeSet 클래스는 TreeMap 클래스를 가지고 만든 것.
+> - 데이터를 키(key)와 값(value)의 쌍(pair)으로 저장한다는 것을 제외하면 TreeSet과 같은 특성을 지님.
+> - 범위 검색과 정렬에 유리한 컬렉션 클래스.
+> - HashMap 클래스보다 데이터 추가, 삭제에 시간이 더 걸림(비교 후 수행하기 때문).
