@@ -248,17 +248,17 @@ ___
 > | TreeSet(Comparator comparator) |
 > | TreeSet(Collection c) |
 
-> | 메서드 |
-> |:-----:|
-> | Object ***first()*** |
-> | Object ***last()*** |
-> | Object ***ceiling(Object o)*** |
-> | Object ***floor(Object o)*** |
-> | Object ***higher(Object o)*** |
-> | Object ***lower(Object o)*** |
-> | SortedSet ***subSet(Object fromElement, Object toElement)*** |
-> | SortedSet ***headSet(Object toElement)*** |
-> | SortedSet ***tailSet(Object fromElement)*** |
+> | 메서드 | 기능 |
+> |:-----:|:-----:|
+> | Object ***first()*** |  |
+> | Object ***last()*** |  |
+> | Object ***ceiling(Object o)*** |  |
+> | Object ***floor(Object o)*** |  |
+> | Object ***higher(Object o)*** |  |
+> | Object ***lower(Object o)*** |  |
+> | SortedSet ***subSet(Object fromElement, Object toElement)*** | 범위 검색 |
+> | SortedSet ***headSet(Object toElement)*** | 지정된 객체보다 작은 값의 객체들을 반환 |
+> | SortedSet ***tailSet(Object fromElement)*** | 지정된 객체보다 큰 값의 객체들을 반환 |
 
 - 기본적으로 add(), remove() 등 Collection 인터페이스에 정의된 메서드는 제외함.
 
