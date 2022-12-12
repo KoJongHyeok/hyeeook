@@ -283,9 +283,41 @@ ___
 > - 일반적으로 Map을 사용하고 싶다면 HashMap 클래스를 사용하면 됨.
 > - 순서를 유지하려면, LinkedHashMap 클래스를 사용하면 됨.
 > - 해싱(hashing) 기법으로 데이터를 저장하기 때문에 데이터가 많아도 검색이 빠름.
+> - 키(key)와 값(value)이 Entry[] 배열에 저장됨.
+> > ```java
+> > class Entry {	// 1. 키와 값을 묶어서 저장.
+> > 	  Object key;
+> >     Object value;
+> > }
+> > Entry[] table;	// 2. 키와 값의 묶음을 배열로 저장.
+> > ```
+> - 똑같은 키로 다른 값이 들어오면 나중에 들어온 값으로 저장됨.
+> > ```java
+> > HashMap map = new HashMap();
+> > map.put("myId", "1234");
+> > map.put("asdf", "1111");
+> > map.put("asdf", "1234");
+> > // 결과 : {myId=1234, asdf=1234}
+> > ```
 
 ## TreeMap
 > - 사실 TreeSet 클래스는 TreeMap 클래스를 가지고 만든 것.
 > - 데이터를 키(key)와 값(value)의 쌍(pair)으로 저장한다는 것을 제외하면 TreeSet과 같은 특성을 지님.
 > - 범위 검색과 정렬에 유리한 컬렉션 클래스.
 > - HashMap 클래스보다 데이터 추가, 삭제에 시간이 더 걸림(비교 후 수행하기 때문).
+
+___
+
+## 해싱(hashing)
+> - 해시함수(hash function)로 해시테이블(hash table)에 데이터를 저장, 검색.
+> - 해시함수를 통해 얻은 결과인 해시코드(hash code)는 저장위치(배열의 index)를 가리킴.
+> - 해시함수를 만드는 방법은 Objects.hash() 메서드를 이용하면 됨.
+> ![hash_table(1)](./img/hash_table(1).jpg)
+
+## 해시 테이블(hash table)
+> - 배열과 링크드 리스트가 조합된 형태.
+> - 2차원 배열과 비슷한 모양이므로 '테이블'이라고 함.
+> - 인덱스마다 여러 개의 링크드 리스트로 묶은 것.
+> - 배열을 통해 접근하기 쉽게 함(배열은 인덱스를 통해 요소에 쉽게 접근할 수 있음).
+> - 링크드 리스트를 통해 변경하기 쉽게 함.
+> ![hash_table(2)](./img/hash_table(2).jpg)
