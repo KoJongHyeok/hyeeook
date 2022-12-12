@@ -259,10 +259,11 @@ ___
 > | SortedSet ***subSet(Object fromElement, Object toElement)*** | 범위 검색 |
 > | SortedSet ***headSet(Object toElement)*** | 지정된 객체보다 작은 값의 객체들을 반환 |
 > | SortedSet ***tailSet(Object fromElement)*** | 지정된 객체보다 큰 값의 객체들을 반환 |
-> > 정렬과 범위 검색하는 과정을 표현한 그림
-> > ![TreeSet_sort_search](./img/TreeSet_sort_search.jpg)
 
 - 기본적으로 add(), remove() 등 Collection 인터페이스에 정의된 메서드는 제외함.
+- 정렬과 범위 검색하는 과정을 표현한 그림.
+  > ![TreeSet_sort_search](./img/TreeSet_sort_search.jpg)
+
 
 <br>
 
@@ -271,7 +272,7 @@ ___
 > - 부모를 먼저 읽고 자식들을 읽는 것을 '전위 순회(pre order)'라고 함.
 > - 자식들을 먼저 읽고 부모를 나중에 읽는 것을 '후위 순회(post order)'라고 함.
 > - 부모를 중간에 넣어서 먼저 왼쪽 자식(부모보다 작은 것)부터 읽고 다음으로 부모를 읽고 마지막으로 오른쪽 자식(부모보다 큰 것)을 읽는 것을 '중위 순회(in order)'라고 함. >> 오름차순으로 정렬됨.
-> 단계별(순서별, 층별)로 왼쪽(작은 것)부터 읽는 것을 '레벨 순회(level order)'라고 함.
+> - 단계별(순서별, 층별)로 왼쪽(작은 것)부터 읽는 것을 '레벨 순회(level order)'라고 함.
 > ![tree_traversal](./img/tree_traversal.jpg)
 
 ___
